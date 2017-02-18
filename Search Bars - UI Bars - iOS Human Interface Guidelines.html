@@ -479,6 +479,9 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p>People use a search bar to search through a large collection of values. There are two styles of search bars—prominent (the default) and minimal. Contacts employs the prominent style, which includes a noticeable tinted background. Photos uses the minimal style, which tends to blend more with the surrounding interface. Search bars are translucent by default, but can be made opaque. When applicable, a search bar can be configured to automatically hide the navigation bar.</p>
 
+<p>사람들은 많은 가치(value)들 사이에서 검색을 하기 위해서 '검색 바'를 사용합니다. 검색 바에는 두가지 종류가 있습니다. 눈에 잘 띄도록 부각한 버전(기본값) 과 미니멀버전이 그것입니다. 주소록 앱의 경우, 발견되기 쉽게 배경에 색상이 들어가 있는 부각 버전을 사용합니다. 사진 앱의 경우, 주변 인터페이스에 녹아 들어가는 미니멀 버전을 사용합니다.  
+검색 바는 반투명이 기본값이지만, 불투명하게 만들 수도 있습니다. 해당된다면(??), 검색 바는 자동으로 네비게이션 바를 숨기도록 설정될 수 있습니다.</p>
+
 <div class="row">
     <div class="col-50">
 
@@ -497,6 +500,8 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 </div>
 
 <p>A search bar contains a single search field, which can include placeholder text and a Clear button. In addition to the search field, a search bar can contain a Cancel button for exiting the search.</p>
+
+<p>검색 바는 서치 필드 한개를 포함하는데, 이 필드 안에는 플레이스홀더텍스트 및 클리어 버튼을 둘 수 있습니다. 또한 서치 바는 현재 검색화면에서 벗어나기 위한 캔슬 버튼도 둘 수 있습니다.</p>
 
 <nav class="tabnav">
         <ul id="bxlabels-search-bar-elements" class="tabnav-items">
@@ -534,14 +539,33 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p><strong>Use a search bar rather than a text field to implement search.</strong> A text field doesn’t have the standard search bar appearance that people expect.</p>
 
+<p><strong>검색을 하기 위해서는 검색 바를 사용하세요. 일반 텍스트 필드 말고요.</strong> 텍스트 필드는 사람들이 기대했던 표준(Standard) 검색 바의 모양이 아닙니다.</p>
+<br>
+
+
 <p><strong>Enable the Clear and Cancel buttons.</strong> Most search bars include a Clear button that erases the contents of the field, and a Cancel button that immediately terminates the search.</p>
 
+<p><strong>클리어 버튼과 캔슬 버튼이 작동되도록 해주세요.</strong> 대부분의 검색 바는 그 필드에 적힌 내용을 지울 수 있는 클리어 버튼을 포함하고 있습니다. 검색 바는 또한, 검색을 바로 종료할 수 있게 하는 캔슬 버튼도 포함하고 있습니다.</p>
+<br>
+
+
 <p><strong>Pick a search bar style that reflects the importance of search in your app.</strong> If search is a primary function in your app, use the default, prominent style of search bar. If search is infrequent, use the minimal style.</p>
+
+<p><strong>앱에서 검색 바가 어느정도 중요한지에 맞추어 스타일을 결정하세요.</strong> <br>
+	1. 검색이 일순위 기능이라면 부각되어 보이는 모양새의 검색 바를 사용하세요. <br>
+	2. 검색이 자주 쓰이지 않는다면, 미니멀한 모양새의 검색 바를 사용하세요.
+</p>
+
 
 <div class="row">
     <div class="col-50">
 
 <p><strong>If necessary, provide hints and context in a search bar.</strong> The search field can contain placeholder text—such as “Search Clothing, Shoes and Accessories” or simply “Search”—as a reminder of the context being searched. A succinct, one-line sentence with appropriate punctuation can also be displayed directly above the search bar to provide guidance. Stocks, for example, uses text above the search field to let people know they can enter a company name or stock symbol.</p>
+
+<p><strong>필요하다면, 검색 바 안에 힌트와 맥락(전후상황, context)을 제공하세요.</strong> 검색 필드는 플레이스홀더 텍스트가 들어가있을수도 있고(Search Clothing, Shoes and Accessories처럼), 검색을 수행하는 맥락 중의 리마인더로써 단순히 "Search" 라고 써있을수도 있습니다.
+<br>
+한 줄의 간단명료한, 적당한 구두점의  문장 역시 서치 바 위에 가이드로서 나타날 수 있습니다. 예를 들어, 증권 앱의 경우, 검색 필드 위에 텍스트를 사용합니다. 이것은 회사의 이름이나 주식 종목명의 약칭를 입력할 수 있다는 걸 이용자들이 쉽게 알 수 있도록 하기 위한 것이지요.</p>
+<br>
 
 </div>
     <div class="col-50">
@@ -553,7 +577,16 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p><strong>Consider providing helpful shortcuts and other content below a search bar.</strong> Use the area under a search bar to help people get to content faster. Safari, for example, shows your bookmarks as soon as you tap the search field. Select one to go right to it without entering any search terms. Stocks shows a list of results as you type into the search field. Tap one at any time without typing any more characters.</p>
 
+<p><strong>사람들이 컨텐츠에 더 빠르게 도달할 수 있도록, 도움이 되는 숏컷이나 다른 컨텐츠를 검색 바 아래에 보여주는 것을 고려해보세요.</strong> 예를 들어 사파리는, 당신이 검색 필드에 탭하자마자 당신의 북마크들을 보여줍니다. 그중 하나를 선택하면 바로 해당 북마크로 갈 수 있습니다. 검색어를 전혀 입력하지 않고도요. 증권 앱은 당신이 검색창에 타이프를 칠 때마다 결과물 목록을 보여줍니다. 추가 입력 없이 그중 하나를 탭하세요.</p>
+<br>
+
+
 <p>For implementation details, see <a href="https://developer.apple.com/reference/uikit/uisearchcontroller" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uisearchcontroller_1&quot;;return this.s_oc?this.s_oc(e):true">UISearchController</a> and <a href="https://developer.apple.com/reference/uikit/uisearchbar" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uisearchbar_1&quot;;return this.s_oc?this.s_oc(e):true">UISearchBar</a>.</p>
+
+<p>실행을 위한 디테일은 see UISearchController and UISearchBar.를 참조하세요.
+</p>
+
+
 
 <!--SCOPE BARS-->
 
@@ -569,9 +602,22 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p>A scope bar can be added to a search bar to let people refine the scope of a search. A scope bar adopts the appearance of its search bar.</p>
 
+<p>사람들이 검색 결과를 정제하여 볼 수 있도록, 검색 바에 스코프 바가 추가될 수 있습니다. 스코프 바의 모양새는 검색 바의 모양새를 따릅니다.</p>
+<br>
+
+
 <p><strong>Favor improving search results over including a scope bar.</strong> A scope bar can be useful when there are clearly defined categories in which to search. However, it’s best to improve search results so scoping isn’t necessary.</p>
 
+<p><strong>스코프 바를 넣어 검색결과에 도움을 주세요.</strong>
+검색결과에 명확하게 카테고리로 분리할 수 있는 경우 스코프 바는 유용합니다. 하지만, 검색 결과를 개선하여 스코핑이 필요없게 하는 것이 베스트입니다.</p>
+<br>
+
+
 <p>For implementation details, see <a href="https://developer.apple.com/reference/uikit/uisearchbar" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uisearchbar_2&quot;;return this.s_oc?this.s_oc(e):true">UISearchBar</a>.</p>
+
+<p>실행을 위한 디테일은 UISearchBar를 참조하세요.</p>
+
+
 
 </div>
 </div>
