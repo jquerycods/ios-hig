@@ -1311,7 +1311,13 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p>The status bar appears along the upper edge of the screen and displays useful information about the device’s current state, such as the time, cellular carrier, network status, and battery level. The actual information shown in the status bar varies depending on the system configuration.</p>
 
+<p>스테이터스 바는 스크린 위쪽변을 따라 보여지며, 유용한 정보들을 보여줍니다. 시간, 통신사, 네트워크상태, 배터리 잔여랑 같은 기기의 현재 상태 등. 스테이터스 바에 보여지는 정보는 시스템 설정에 따라 다를 수 있습니다.</p>
+
+<br>
+<br>
 <p><strong>Use the system-provided status bar.</strong> People expect the status bar to be consistent systemwide. Don’t replace it with a custom status bar.</p>
+
+<p><strong>시스템이 제공하는 스테이터스 바를 사용하세요.</strong> 사람들은 스테이터스 바가 시스템 전반에 걸쳐 일관성이 있기를 기대하니까요.</p?>
 
 <div class="row">
 <div class="col-50">
@@ -1332,6 +1338,9 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p><strong>Coordinate the status bar style with your app design.</strong> The visual style of the status bar’s text and indicators is either light or dark, and can be set globally for your app or individually for different screens. A dark status bar works well above light-colored content and a light status bar works well above dark-colored content.</p>
 
+<p><strong>스테이터스 바의 스타일이 당신의 앱 디자인과 어우러지게 하세요.</strong> 스테이터스 바의 텍스트와 인디케이터의 스타일은 밝거나 어둡거나 둘 중 하나이며, 당시의 앱 전체에 어우러지게, 혹은 앱 내 각 화면과 어우러지도록 세팅될 수 있습니다. 어두운 스테이터스 바는 밝은 색의 컨텐츠 위에서 잘 보이며, 밝은 스테이터스 바는 어두운 색 컨텐츠 위에서 잘 보입니다.</p>
+
+
 <div class="row">
     <div class="col-50">
 
@@ -1342,13 +1351,23 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 <li>Display a custom image, such as a gradient or solid color, behind the status bar.</li>
 <li>Apply a blur to the content behind the status bar.</li>
 </ul>
+<br>
+<br>
+<p><strong> 스테이터스 바 아래의 컨텐츠는 모호하게 처리합니다(←번역 자신 없음...)</strong> 스테이터스 바 의 배경은 투명이 기본값이고, 그 아래의 컨텐츠를 볼수 있습니다. 스테이터스 바의 내용이 잘 읽히도록 유지하면서, 한편 이 스테이터스 바 뒤쪽이 인터랙티브한 영역이라고는 느껴지지 않도록 해주세요. 이를 위해서는 세개의 방법이 있습니다.</p>
+<ul>
+<li>앱에 네비게이션 바를 사용하세요. 이 바는 스테이터스 바의 배경을  자동적으로 표시해주며, 또한 컨텐츠가 스테이터스 바 아래에 생기지 않을 것임을 확정하여 줍니다.</li>
+<li>그라데이션 혹은 단색으로 된 커스텀 이미지를 스테이터스 바 뒤에 표시되게 합니다.</li>
+<li>스테이터스 바 뒤의 컨텐츠에 블러를 적용합니다.</li>
+</ul>
+
+
 
 </div>
     <div class="col-50">
 
 <p><img src="./Status Bars - UI Bars - iOS Human Interface Guidelines_files/status_bar_translucent_2x.png" alt="" title="" class="device-frame device-frame-top" data-hires-status="pending" style="background-image: url(&quot;https://developer.apple.com/ios/human-interface-guidelines/images/iPhone6s_iOSHIG_Frame_2x.png&quot;);"></p>
 
-<p class="smaller text-center">Translucent</p>
+<p class="smaller text-center">Translucent (반투명)</p>
 
 </div>
 </div>
@@ -1367,13 +1386,27 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
     <div class="col-50">
 
 <p><strong>Consider temporarily hiding the status bar when displaying full-screen media.</strong> A status bar can be distracting when users are trying to focus on media. Temporarily hide these elements to provide a more immersive experience. The Photos app, for example, hides the status bar and other interface elements during browsing of full-screen photos.</p>
+<p><strong>
+전체 화면을 사용하는 미디어를 위하여, 일시적으로 스테이터스 바를 숨기는 것을 고려해보세요.</strong> 스테이터스 바가 사용자가 미디어에 집중하는 데에 방해가 될 수 있기 때문입니다. 더 전방위한 경험을 위해 이들 요소들을 잠시 숨기세요. 예를 들어 포토 앱의 경우, 포토 앱을 풀스크린으로 사용하는 동안 스테이터스 바 및 다른 인터페이스 요소들을 숨깁니다.</p>
+<br>
+<br>
 
 <p><strong>Avoid permanently hiding the status bar.</strong> Without a status bar, people must leave your app to check the time or see if they have a Wi-Fi connection. Let people redisplay a hidden status bar by using a simple, discoverable gesture. When browsing full-screen photos in the Photos app, a single tap shows the status bar again.</p>
 
+<p><strong>스테이터스 바를 영원히 숨기는 것은 삼가세요.</strong> 스테이터스바가 안보이면 사용자들은 시계를 보기 위해 혹은 와이파이 연결상태를 보기 위해 앱을 빠져나가게 됩니다. 숨겨진 스테이터스바를 단순하고 발견가능한 제스처를 통해 재표시할 수 있게 해주세요. 풀화면 사진 앱의 경우, 싱글 탭 한번으로 스테이터스바를 다시 볼 수 있게 만들어져 있습니다.</p>
+<br>
+<br>
+
 <p><strong>Communicate lengthy network activity in the status bar.</strong> When your app uses the network, especially for lengthy operations, show the network activity status bar indicator so people know activity is occurring. See <a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/#network-activity-indicators" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/#netwo_1&quot;;return this.s_oc?this.s_oc(e):true">Network Activity Indicators</a>.</p>
+
+<p><strong>스테이터스 바는 네트워크 활동이 지연되는 것에 대해 커뮤니케이트합니다.</strong> 당신이 앱이 네트워크를 사용하던 중 특히 지연되는 네트워크 활동 상태에 있을 때에, 네트워크 상태 바는 현재 활동이 일어나는 중임을 사용자가 알수 있게 해줍니다. Network Activity Indicators 항목을 읽어보세요.</p>
+<br>
+<br>
 
 <p>For implementation details, see the <a href="https://developer.apple.com/reference/uikit/uistatusbarstyle" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uistatusbarstyle_1&quot;;return this.s_oc?this.s_oc(e):true">UIStatusBarStyle</a> constant in <a href="https://developer.apple.com/reference/uikit/uiapplication" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uiapplication_1&quot;;return this.s_oc?this.s_oc(e):true">UIApplication</a> and the <a href="https://developer.apple.com/reference/uikit/uiviewcontroller/1621416-preferredstatusbarstyle" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uiviewcontroller/1621416-preferredstatusbarstyle_1&quot;;return this.s_oc?this.s_oc(e):true">preferredStatusBarStyle</a> property in <a href="https://developer.apple.com/reference/uikit/uiviewcontroller" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uiviewcontroller_1&quot;;return this.s_oc?this.s_oc(e):true">UIViewController</a>.</p>
 
+실행을 위한 디테일은 
+see the UIStatusBarStyle constant in UIApplication and the preferredStatusBarStyle property in UIViewController.를 참조하세요.
 </div>
 </div>
 
