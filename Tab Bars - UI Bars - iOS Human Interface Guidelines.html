@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<meta name="Author" content="Apple Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<link rel="shortcut icon" href="https://developer.apple.com/favicon.ico">
+<link rel="icon" href="https://developer.apple.com/favicon.ico">
+<link rel="mask-icon" href="https://developer.apple.com/apple-logo.svg" color="#333333">
+
+<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/globalnav.css" type="text/css">
+<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/localnav.css" type="text/css">
+<!--<link rel="stylesheet" href="/assets/styles/global.css" type="text/css" />-->
+<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/global.dist.css" type="text/css">
+
+<script src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/jquery-1.11.0.min.js"></script>
+<script src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/jquery.retinate.js" type="text/javascript" charset="utf-8"></script>
+<!--[if lt IE 9]>
+	<link rel="stylesheet" href="/assets/styles/oldie.css" type="text/css" />
+	<script src="/assets/scripts/html5.js"></script>
+<![endif]-->
+<script src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/lg-search.js"></script>
+<script src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/global.js"></script>
+
+	<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/fonts" type="text/css">
+<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/fonts(1)" type="text/css">
+<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/fonts(2)" type="text/css">
+<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/fonts(3)">
+
+	<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/localnav(1).css" type="text/css">
+	<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/human-interface-guidelines.css" type="text/css">
+	<link rel="stylesheet" href="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/ios.css" type="text/css">
+	<script src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/app.js"></script>
+	<script type="text/javascript" src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/jquery.bxslider.min.js"></script>
+
+	<title>Tab Bars - UI Bars - iOS Human Interface Guidelines</title>
+	<meta name="omni_page" content="Tab Bars - UI Bars - iOS Human Interface Guidelines">
+	<meta name="Description" content="Learn about designing apps for iOS.">
+	<meta name="robots" content="noodp,noydir">
+	
+		</head>
+<body id="ui-bars" class="tab-bars">
+
+	<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+<nav id="ac-globalnav" class="js no-touch svg no-ie7 no-ie8" role="navigation" aria-label="Global Navigation" data-hires="false" data-analytics-region="global nav" lang="en-US">
+	<div class="ac-gn-content">
+		<ul class="ac-gn-header">
+			<li class="ac-gn-item ac-gn-menuicon"> <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					</span>
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					</span>
+				</label>
+				<a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#ac-gn-menustate_1&quot;;return this.s_oc?this.s_oc(e):true"> <span class="ac-gn-menuanchor-label">Open Menu</span> </a>
+				<a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#_1&quot;;return this.s_oc?this.s_oc(e):true"> <span class="ac-gn-menuanchor-label">Close Menu</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple" href="https://developer.apple.com/" id="ac-gn-firstfocus-small" onclick="s_objectID=&quot;https://developer.apple.com/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span class="ac-gn-link-text">Apple Developer</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+				<a class="ac-gn-link ac-gn-link-bag" href="https://developer.apple.com/account/" onclick="s_objectID=&quot;https://developer.apple.com/account/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span class="ac-gn-link-text">Account</span> <span class="ac-gn-bag-badge"></span> </a> <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span> </li>
+		</ul>
+		<ul class="ac-gn-list">
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple" href="https://developer.apple.com/" id="ac-gn-firstfocus" onclick="s_objectID=&quot;https://developer.apple.com/_2&quot;;return this.s_oc?this.s_oc(e):true"> <span class="ac-gn-link-text">Apple Developer</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-discover">
+				<a class="ac-gn-link" href="https://developer.apple.com/discover/" onclick="s_objectID=&quot;https://developer.apple.com/discover/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span>Discover</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-design">
+				<a class="ac-gn-link" href="https://developer.apple.com/design/" onclick="s_objectID=&quot;https://developer.apple.com/design/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span>Design</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-develop">
+				<a class="ac-gn-link" href="https://developer.apple.com/develop/" onclick="s_objectID=&quot;https://developer.apple.com/develop/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span>Develop</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-distribute">
+				<a class="ac-gn-link" href="https://developer.apple.com/distribute/" onclick="s_objectID=&quot;https://developer.apple.com/distribute/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span>Distribute</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+				<a class="ac-gn-link" href="https://developer.apple.com/support/" onclick="s_objectID=&quot;https://developer.apple.com/support/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span>Support</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-account">
+				<a class="ac-gn-link" href="https://developer.apple.com/account/" onclick="s_objectID=&quot;https://developer.apple.com/account/_2&quot;;return this.s_oc?this.s_oc(e):true"> <span>Account</span> </a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+				<a id="ac-gn-search-button" class="ac-gn-link ac-gn-link-search" href="https://developer.apple.com/search/" aria-label="Search developer.apple.com" role="button" aria-haspopup="true" onclick="s_objectID=&quot;https://developer.apple.com/search/_1&quot;;return this.s_oc?this.s_oc(e):true"> <span class="ac-gn-search-placeholder" aria-hidden="true">Search</span> </a>
+			</li>
+		</ul>
+		<aside id="ac-gn-searchview" class="ac-gn-searchview" role="search" data-analytics-region="search">
+			<div class="ac-gn-searchview-content">
+				<form id="ac-gn-searchform" class="ac-gn-searchform" action="https://developer.apple.com/search/" method="get">
+					<div class="ac-gn-searchform-wrapper"> <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" name="q" placeholder="Search" data-placeholder-long="Search for documentation, videos, and more" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false"> <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button> <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button> </div>
+				</form>
+				<aside id="ac-gn-searchresults" class="ac-gn-searchresults" data-string-quicklinks="Quick Links" data-string-suggestions="Suggested Searches" data-string-noresults="Hit enter to search.">
+
+				</aside>
+			</div> <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					<span class="ac-gn-searchview-close-wrapper">
+						<span class="ac-gn-searchview-close-left"></span>
+						<span class="ac-gn-searchview-close-right"></span>
+					</span>
+				</button> </aside>
+	</div>
+</nav>
+<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+<script type="text/javascript" src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter">&nbsp;</div>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusdeveloper"
+</script>
+
+<script type="text/javascript" src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/s_code_h.js"></script>
+<script type="text/javascript">
+s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+s.channel="www.us.developer"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+	<input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate">
+		<div id="ac-ln-sticky-placeholder" class="css-sticky"></div><nav id="ac-localnav" class="ac-localnav-scrim js no-touch svg no-ie7 no-ie8 css-sticky" lang="en-US" role="navigation" data-analytics-region="local nav" data-sticky="">
+			<div class="ac-ln-wrapper">
+				<div class="ac-ln-background"></div>
+				<div class="ac-ln-content">
+					<h2 class="ac-ln-title">
+						<a class="ac-ln-title-logo" href="https://developer.apple.com/ios/human-interface-guidelines/" data-analytics-title="product index" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="visuallyhidden">iOS Human Interface Guidelines</span></a>
+					</h2>
+
+					<div class="ac-ln-menu">
+						<div class="ac-ln-menu-tray">
+							<a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#ac-ln-menustate_1&quot;;return this.s_oc?this.s_oc(e):true">
+								<span class="ac-ln-menucta-anchor-label">Open Menu</span>
+							</a>
+							<a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/#_2&quot;;return this.s_oc?this.s_oc(e):true">
+								<span class="ac-ln-menucta-anchor-label">Close Menu</span>
+							</a>
+
+							<nav id="directorynav-menu" class="footer-breadory">
+								<div class="directorynav">
+																<div class="column">
+									<h3>Overview</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/_1&quot;;return this.s_oc?this.s_oc(e):true">Design Principles</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/_1&quot;;return this.s_oc?this.s_oc(e):true">What’s New in iOS 10</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/_1&quot;;return this.s_oc?this.s_oc(e):true">Interface Essentials</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Interaction</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/_1&quot;;return this.s_oc?this.s_oc(e):true">3D Touch</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/_1&quot;;return this.s_oc?this.s_oc(e):true">Accessibility</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/_1&quot;;return this.s_oc?this.s_oc(e):true">Audio</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/_1&quot;;return this.s_oc?this.s_oc(e):true">Authentication</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/data-entry/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/data-entry/_1&quot;;return this.s_oc?this.s_oc(e):true">Data Entry</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/_1&quot;;return this.s_oc?this.s_oc(e):true">Feedback</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/file-handling/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/file-handling/_1&quot;;return this.s_oc?this.s_oc(e):true">File Handling</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/first-launch-experience/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/first-launch-experience/_1&quot;;return this.s_oc?this.s_oc(e):true">First Launch Experience</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/_1&quot;;return this.s_oc?this.s_oc(e):true">Gestures</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/_1&quot;;return this.s_oc?this.s_oc(e):true">Loading</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/_1&quot;;return this.s_oc?this.s_oc(e):true">Modality</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/_1&quot;;return this.s_oc?this.s_oc(e):true">Navigation</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/_1&quot;;return this.s_oc?this.s_oc(e):true">Requesting Permission</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/_1&quot;;return this.s_oc?this.s_oc(e):true">Settings</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/_1&quot;;return this.s_oc?this.s_oc(e):true">Terminology</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/_1&quot;;return this.s_oc?this.s_oc(e):true">Undo and Redo</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Features</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/_1&quot;;return this.s_oc?this.s_oc(e):true">Multitasking</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/notifications/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/notifications/_1&quot;;return this.s_oc?this.s_oc(e):true">Notifications</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/printing/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/printing/_1&quot;;return this.s_oc?this.s_oc(e):true">Printing</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/_1&quot;;return this.s_oc?this.s_oc(e):true">Quick Look</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/siri/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/siri/_1&quot;;return this.s_oc?this.s_oc(e):true">Siri</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/_1&quot;;return this.s_oc?this.s_oc(e):true">TV Providers</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Visual Design</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/_1&quot;;return this.s_oc?this.s_oc(e):true">Animation</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/_1&quot;;return this.s_oc?this.s_oc(e):true">Branding</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/_1&quot;;return this.s_oc?this.s_oc(e):true">Color</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/_1&quot;;return this.s_oc?this.s_oc(e):true">Layout</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/_1&quot;;return this.s_oc?this.s_oc(e):true">Typography</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Graphics</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/_1&quot;;return this.s_oc?this.s_oc(e):true">App Icon</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/_1&quot;;return this.s_oc?this.s_oc(e):true">Custom Icons</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/_1&quot;;return this.s_oc?this.s_oc(e):true">Image Size and Resolution</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/launch-screen/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/launch-screen/_1&quot;;return this.s_oc?this.s_oc(e):true">Launch Screen</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/_1&quot;;return this.s_oc?this.s_oc(e):true">System Icons</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>UI Bars</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/_1&quot;;return this.s_oc?this.s_oc(e):true">Navigation Bars</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/search-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/search-bars/_1&quot;;return this.s_oc?this.s_oc(e):true">Search Bars</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/_1&quot;;return this.s_oc?this.s_oc(e):true">Status Bars</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/_1&quot;;return this.s_oc?this.s_oc(e):true">Tab Bars</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_1&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>UI Views</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/_1&quot;;return this.s_oc?this.s_oc(e):true">Action Sheets</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/activity-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/activity-views/_1&quot;;return this.s_oc?this.s_oc(e):true">Activity Views</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/alerts/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/alerts/_1&quot;;return this.s_oc?this.s_oc(e):true">Alerts</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/collections/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/collections/_1&quot;;return this.s_oc?this.s_oc(e):true">Collections</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/image-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/image-views/_1&quot;;return this.s_oc?this.s_oc(e):true">Image Views</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/maps/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/maps/_1&quot;;return this.s_oc?this.s_oc(e):true">Maps</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/pages/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/pages/_1&quot;;return this.s_oc?this.s_oc(e):true">Pages</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/popovers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/popovers/_1&quot;;return this.s_oc?this.s_oc(e):true">Popovers</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/_1&quot;;return this.s_oc?this.s_oc(e):true">Scroll Views</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/split-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/split-views/_1&quot;;return this.s_oc?this.s_oc(e):true">Split Views</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/_1&quot;;return this.s_oc?this.s_oc(e):true">Tables</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/text-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/text-views/_1&quot;;return this.s_oc?this.s_oc(e):true">Text Views</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/web-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/web-views/_1&quot;;return this.s_oc?this.s_oc(e):true">Web Views</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>UI Controls</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/_1&quot;;return this.s_oc?this.s_oc(e):true">Buttons</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/edit-menus/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/edit-menus/_1&quot;;return this.s_oc?this.s_oc(e):true">Edit Menus</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/labels/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/labels/_1&quot;;return this.s_oc?this.s_oc(e):true">Labels</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/page-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/page-controls/_1&quot;;return this.s_oc?this.s_oc(e):true">Page Controls</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/pickers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/pickers/_1&quot;;return this.s_oc?this.s_oc(e):true">Pickers</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/_1&quot;;return this.s_oc?this.s_oc(e):true">Progress Indicators</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/refresh-content-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/refresh-content-controls/_1&quot;;return this.s_oc?this.s_oc(e):true">Refresh Content Controls</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/_1&quot;;return this.s_oc?this.s_oc(e):true">Segmented Controls</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/sliders/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/sliders/_1&quot;;return this.s_oc?this.s_oc(e):true">Sliders</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/steppers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/steppers/_1&quot;;return this.s_oc?this.s_oc(e):true">Steppers</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/switches/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/switches/_1&quot;;return this.s_oc?this.s_oc(e):true">Switches</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/text-fields/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/text-fields/_1&quot;;return this.s_oc?this.s_oc(e):true">Text Fields</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Extensions</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/_1&quot;;return this.s_oc?this.s_oc(e):true">Custom Keyboards</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/_1&quot;;return this.s_oc?this.s_oc(e):true">Document Providers</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/_1&quot;;return this.s_oc?this.s_oc(e):true">Home Screen Actions</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/messaging/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/messaging/_1&quot;;return this.s_oc?this.s_oc(e):true">Messaging</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/photo-editing/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/photo-editing/_1&quot;;return this.s_oc?this.s_oc(e):true">Photo Editing</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/_1&quot;;return this.s_oc?this.s_oc(e):true">Sharing and Actions</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/_1&quot;;return this.s_oc?this.s_oc(e):true">Widgets</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Technologies</h3>
+									<ul>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/apple-pay/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/apple-pay/_1&quot;;return this.s_oc?this.s_oc(e):true">Apple Pay</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/gamekit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/gamekit/_1&quot;;return this.s_oc?this.s_oc(e):true">GameKit</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/healthkit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/healthkit/_1&quot;;return this.s_oc?this.s_oc(e):true">HealthKit</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/homekit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/homekit/_1&quot;;return this.s_oc?this.s_oc(e):true">HomeKit</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/icloud/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/icloud/_1&quot;;return this.s_oc?this.s_oc(e):true">iCloud</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/_1&quot;;return this.s_oc?this.s_oc(e):true">In-App Purchase</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/live-photos/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/live-photos/_1&quot;;return this.s_oc?this.s_oc(e):true">Live Photos</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/researchkit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/researchkit/_1&quot;;return this.s_oc?this.s_oc(e):true">ResearchKit</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/social-media/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/social-media/_1&quot;;return this.s_oc?this.s_oc(e):true">Social Media</a></li>
+																				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/wallet/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/wallet/_1&quot;;return this.s_oc?this.s_oc(e):true">Wallet</a></li>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3><a href="https://developer.apple.com/ios/human-interface-guidelines/resources/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/resources/_1&quot;;return this.s_oc?this.s_oc(e):true">Resources</a></h3>
+									<ul>
+																			</ul>
+								</div>
+																<div class="column">
+									<h3>Related Guidelines</h3>
+									<ul>
+										<li><a href="https://developer.apple.com/watch/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/watch/human-interface-guidelines/_1&quot;;return this.s_oc?this.s_oc(e):true">watchOS Human Interface Guidelines</a></li>
+										<li><a href="https://developer.apple.com/tvos/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/tvos/human-interface-guidelines/_1&quot;;return this.s_oc?this.s_oc(e):true">tvOS Human Interface Guidelines</a></li>
+										<li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/" onclick="s_objectID=&quot;https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelin_1&quot;;return this.s_oc?this.s_oc(e):true">macOS Human Interface Guidelines</a></li>
+									</ul>
+								</div>
+							</div>
+							</nav>
+
+						</div>
+
+						<div class="ac-ln-actions ac-ln-actions">
+							<div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+								<label for="ac-ln-menustate" class="ac-ln-menucta">
+									<span class="ac-ln-menucta-chevron"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<label id="ac-ln-curtain" for="ac-ln-menustate"></label>
+		<script type="text/javascript" src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/ac-localnav.built.js"></script><div id="ac-ln-viewport-emitter">&nbsp;</div>
+
+
+	
+	<main id="main" class="main" role="main">
+
+		<!-- HIG content -->
+			<div class="grid" data-hires="true">
+				<section class="row">
+
+					<!-- Side navigation -->
+					<div class="col-20 doc-nav-container">
+						<nav id="doc-nav" class="doc-nav" role="navigation" aria-label="Local Navigation" data-hires="true">
+							<ul class="side">
+																<li class="nav-overview"><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/_1&quot;;return this.s_oc?this.s_oc(e):true">Overview</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-design-principles"><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/_2&quot;;return this.s_oc?this.s_oc(e):true">Design Principles</a></li>
+																				<li class="nav-whats-new"><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/_2&quot;;return this.s_oc?this.s_oc(e):true">What’s New in iOS 10</a></li>
+																				<li class="nav-interface-essentials"><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/_2&quot;;return this.s_oc?this.s_oc(e):true">Interface Essentials</a></li>
+																			</ul>
+								</li>
+																<li class="nav-interaction"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/_1&quot;;return this.s_oc?this.s_oc(e):true">Interaction</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-3d-touch"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/_2&quot;;return this.s_oc?this.s_oc(e):true">3D Touch</a></li>
+																				<li class="nav-accessibility"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/_2&quot;;return this.s_oc?this.s_oc(e):true">Accessibility</a></li>
+																				<li class="nav-audio"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/_2&quot;;return this.s_oc?this.s_oc(e):true">Audio</a></li>
+																				<li class="nav-authentication"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/_2&quot;;return this.s_oc?this.s_oc(e):true">Authentication</a></li>
+																				<li class="nav-data-entry"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/data-entry/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/data-entry/_2&quot;;return this.s_oc?this.s_oc(e):true">Data Entry</a></li>
+																				<li class="nav-feedback"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/_2&quot;;return this.s_oc?this.s_oc(e):true">Feedback</a></li>
+																				<li class="nav-file-handling"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/file-handling/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/file-handling/_2&quot;;return this.s_oc?this.s_oc(e):true">File Handling</a></li>
+																				<li class="nav-first-launch-experience"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/first-launch-experience/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/first-launch-experience/_2&quot;;return this.s_oc?this.s_oc(e):true">First Launch Experience</a></li>
+																				<li class="nav-gestures"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/_2&quot;;return this.s_oc?this.s_oc(e):true">Gestures</a></li>
+																				<li class="nav-loading"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/_2&quot;;return this.s_oc?this.s_oc(e):true">Loading</a></li>
+																				<li class="nav-modality"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/_2&quot;;return this.s_oc?this.s_oc(e):true">Modality</a></li>
+																				<li class="nav-navigation"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/_2&quot;;return this.s_oc?this.s_oc(e):true">Navigation</a></li>
+																				<li class="nav-requesting-permission"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/_2&quot;;return this.s_oc?this.s_oc(e):true">Requesting Permission</a></li>
+																				<li class="nav-settings"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/_2&quot;;return this.s_oc?this.s_oc(e):true">Settings</a></li>
+																				<li class="nav-terminology"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/_2&quot;;return this.s_oc?this.s_oc(e):true">Terminology</a></li>
+																				<li class="nav-undo-and-redo"><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/_2&quot;;return this.s_oc?this.s_oc(e):true">Undo and Redo</a></li>
+																			</ul>
+								</li>
+																<li class="nav-features"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/_1&quot;;return this.s_oc?this.s_oc(e):true">Features</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-multitasking"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/_2&quot;;return this.s_oc?this.s_oc(e):true">Multitasking</a></li>
+																				<li class="nav-notifications"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/notifications/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/notifications/_2&quot;;return this.s_oc?this.s_oc(e):true">Notifications</a></li>
+																				<li class="nav-printing"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/printing/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/printing/_2&quot;;return this.s_oc?this.s_oc(e):true">Printing</a></li>
+																				<li class="nav-quick-look"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/_2&quot;;return this.s_oc?this.s_oc(e):true">Quick Look</a></li>
+																				<li class="nav-siri"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/siri/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/siri/_2&quot;;return this.s_oc?this.s_oc(e):true">Siri</a></li>
+																				<li class="nav-tvproviders"><a href="https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/_2&quot;;return this.s_oc?this.s_oc(e):true">TV Providers</a></li>
+																			</ul>
+								</li>
+																<li class="nav-visual-design"><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/_1&quot;;return this.s_oc?this.s_oc(e):true">Visual Design</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-animation"><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/_2&quot;;return this.s_oc?this.s_oc(e):true">Animation</a></li>
+																				<li class="nav-branding"><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/_2&quot;;return this.s_oc?this.s_oc(e):true">Branding</a></li>
+																				<li class="nav-color"><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/_2&quot;;return this.s_oc?this.s_oc(e):true">Color</a></li>
+																				<li class="nav-layout"><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/_2&quot;;return this.s_oc?this.s_oc(e):true">Layout</a></li>
+																				<li class="nav-typography"><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/_2&quot;;return this.s_oc?this.s_oc(e):true">Typography</a></li>
+																			</ul>
+								</li>
+																<li class="nav-graphics"><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/_1&quot;;return this.s_oc?this.s_oc(e):true">Graphics</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-app-icon"><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/_2&quot;;return this.s_oc?this.s_oc(e):true">App Icon</a></li>
+																				<li class="nav-custom-icons"><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/_2&quot;;return this.s_oc?this.s_oc(e):true">Custom Icons</a></li>
+																				<li class="nav-image-size-and-resolution"><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/_2&quot;;return this.s_oc?this.s_oc(e):true">Image Size and Resolution</a></li>
+																				<li class="nav-launch-screen"><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/launch-screen/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/launch-screen/_2&quot;;return this.s_oc?this.s_oc(e):true">Launch Screen</a></li>
+																				<li class="nav-system-icons"><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/_2&quot;;return this.s_oc?this.s_oc(e):true">System Icons</a></li>
+																			</ul>
+								</li>
+																<li class="nav-ui-bars open"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/_1&quot;;return this.s_oc?this.s_oc(e):true">UI Bars</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-navigation-bars"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/_2&quot;;return this.s_oc?this.s_oc(e):true">Navigation Bars</a></li>
+																				<li class="nav-search-bars"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/search-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/search-bars/_2&quot;;return this.s_oc?this.s_oc(e):true">Search Bars</a></li>
+																				<li class="nav-status-bars"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/_2&quot;;return this.s_oc?this.s_oc(e):true">Status Bars</a></li>
+																				<li class="nav-tab-bars selected"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/_2&quot;;return this.s_oc?this.s_oc(e):true">Tab Bars</a></li>
+																				<li class="nav-toolbars"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_2&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a></li>
+																			</ul>
+								</li>
+																<li class="nav-ui-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/_1&quot;;return this.s_oc?this.s_oc(e):true">UI Views</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-action-sheets"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/_2&quot;;return this.s_oc?this.s_oc(e):true">Action Sheets</a></li>
+																				<li class="nav-activity-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/activity-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/activity-views/_2&quot;;return this.s_oc?this.s_oc(e):true">Activity Views</a></li>
+																				<li class="nav-alerts"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/alerts/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/alerts/_2&quot;;return this.s_oc?this.s_oc(e):true">Alerts</a></li>
+																				<li class="nav-collections"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/collections/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/collections/_2&quot;;return this.s_oc?this.s_oc(e):true">Collections</a></li>
+																				<li class="nav-image-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/image-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/image-views/_2&quot;;return this.s_oc?this.s_oc(e):true">Image Views</a></li>
+																				<li class="nav-maps"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/maps/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/maps/_2&quot;;return this.s_oc?this.s_oc(e):true">Maps</a></li>
+																				<li class="nav-pages"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/pages/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/pages/_2&quot;;return this.s_oc?this.s_oc(e):true">Pages</a></li>
+																				<li class="nav-popovers"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/popovers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/popovers/_2&quot;;return this.s_oc?this.s_oc(e):true">Popovers</a></li>
+																				<li class="nav-scroll-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/_2&quot;;return this.s_oc?this.s_oc(e):true">Scroll Views</a></li>
+																				<li class="nav-split-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/split-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/split-views/_2&quot;;return this.s_oc?this.s_oc(e):true">Split Views</a></li>
+																				<li class="nav-tables"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/_2&quot;;return this.s_oc?this.s_oc(e):true">Tables</a></li>
+																				<li class="nav-text-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/text-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/text-views/_2&quot;;return this.s_oc?this.s_oc(e):true">Text Views</a></li>
+																				<li class="nav-web-views"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/web-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/web-views/_2&quot;;return this.s_oc?this.s_oc(e):true">Web Views</a></li>
+																			</ul>
+								</li>
+																<li class="nav-ui-controls"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/_1&quot;;return this.s_oc?this.s_oc(e):true">UI Controls</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-buttons"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/_2&quot;;return this.s_oc?this.s_oc(e):true">Buttons</a></li>
+																				<li class="nav-edit-menus"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/edit-menus/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/edit-menus/_2&quot;;return this.s_oc?this.s_oc(e):true">Edit Menus</a></li>
+																				<li class="nav-labels"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/labels/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/labels/_2&quot;;return this.s_oc?this.s_oc(e):true">Labels</a></li>
+																				<li class="nav-page-controls"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/page-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/page-controls/_2&quot;;return this.s_oc?this.s_oc(e):true">Page Controls</a></li>
+																				<li class="nav-pickers"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/pickers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/pickers/_2&quot;;return this.s_oc?this.s_oc(e):true">Pickers</a></li>
+																				<li class="nav-progress-indicators"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/_2&quot;;return this.s_oc?this.s_oc(e):true">Progress Indicators</a></li>
+																				<li class="nav-refresh-content-controls"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/refresh-content-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/refresh-content-controls/_2&quot;;return this.s_oc?this.s_oc(e):true">Refresh Content Controls</a></li>
+																				<li class="nav-segmented-controls"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/_2&quot;;return this.s_oc?this.s_oc(e):true">Segmented Controls</a></li>
+																				<li class="nav-sliders"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/sliders/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/sliders/_2&quot;;return this.s_oc?this.s_oc(e):true">Sliders</a></li>
+																				<li class="nav-steppers"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/steppers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/steppers/_2&quot;;return this.s_oc?this.s_oc(e):true">Steppers</a></li>
+																				<li class="nav-switches"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/switches/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/switches/_2&quot;;return this.s_oc?this.s_oc(e):true">Switches</a></li>
+																				<li class="nav-text-fields"><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/text-fields/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/text-fields/_2&quot;;return this.s_oc?this.s_oc(e):true">Text Fields</a></li>
+																			</ul>
+								</li>
+																<li class="nav-extensions"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/_1&quot;;return this.s_oc?this.s_oc(e):true">Extensions</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-custom-keyboards"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/_2&quot;;return this.s_oc?this.s_oc(e):true">Custom Keyboards</a></li>
+																				<li class="nav-document-providers"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/_2&quot;;return this.s_oc?this.s_oc(e):true">Document Providers</a></li>
+																				<li class="nav-home-screen-actions"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/_2&quot;;return this.s_oc?this.s_oc(e):true">Home Screen Actions</a></li>
+																				<li class="nav-messaging"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/messaging/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/messaging/_2&quot;;return this.s_oc?this.s_oc(e):true">Messaging</a></li>
+																				<li class="nav-photo-editing"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/photo-editing/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/photo-editing/_2&quot;;return this.s_oc?this.s_oc(e):true">Photo Editing</a></li>
+																				<li class="nav-sharing-and-actions"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/_2&quot;;return this.s_oc?this.s_oc(e):true">Sharing and Actions</a></li>
+																				<li class="nav-widgets"><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/_2&quot;;return this.s_oc?this.s_oc(e):true">Widgets</a></li>
+																			</ul>
+								</li>
+																<li class="nav-technologies"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/_1&quot;;return this.s_oc?this.s_oc(e):true">Technologies</a>
+									<ul class="sub-side-page-list">
+
+									
+																				<li class="nav-apple-pay"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/apple-pay/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/apple-pay/_2&quot;;return this.s_oc?this.s_oc(e):true">Apple Pay</a></li>
+																				<li class="nav-gamekit"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/gamekit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/gamekit/_2&quot;;return this.s_oc?this.s_oc(e):true">GameKit</a></li>
+																				<li class="nav-healthkit"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/healthkit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/healthkit/_2&quot;;return this.s_oc?this.s_oc(e):true">HealthKit</a></li>
+																				<li class="nav-homekit"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/homekit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/homekit/_2&quot;;return this.s_oc?this.s_oc(e):true">HomeKit</a></li>
+																				<li class="nav-icloud"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/icloud/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/icloud/_2&quot;;return this.s_oc?this.s_oc(e):true">iCloud</a></li>
+																				<li class="nav-in-app-purchase"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/_2&quot;;return this.s_oc?this.s_oc(e):true">In-App Purchase</a></li>
+																				<li class="nav-live-photos"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/live-photos/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/live-photos/_2&quot;;return this.s_oc?this.s_oc(e):true">Live Photos</a></li>
+																				<li class="nav-researchkit"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/researchkit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/researchkit/_2&quot;;return this.s_oc?this.s_oc(e):true">ResearchKit</a></li>
+																				<li class="nav-social-media"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/social-media/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/social-media/_2&quot;;return this.s_oc?this.s_oc(e):true">Social Media</a></li>
+																				<li class="nav-wallet"><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/wallet/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/wallet/_2&quot;;return this.s_oc?this.s_oc(e):true">Wallet</a></li>
+																			</ul>
+								</li>
+																<li class="nav-resources"><a href="https://developer.apple.com/ios/human-interface-guidelines/resources/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/resources/_2&quot;;return this.s_oc?this.s_oc(e):true">Resources</a>
+									<ul class="sub-side-page-list">
+
+									
+																			</ul>
+								</li>
+															</ul>
+						</nav>
+					</div>
+
+					<!-- Main content -->
+					<div class="col-80 hig-content" data-hires="true">
+						<div id="tab-bars" class="row">
+    <div class="col-50">
+
+<h2>Tab Bars</h2>
+
+<p>A tab bar appears at the bottom of an app screen and provides the ability to quickly switch between different sections of an app. Tab bars are translucent, may have a background tint, maintain the same height in all screen orientations, and are hidden when a keyboard is displayed. A tab bar may contain any number of tabs, but the number of visible tabs varies based on the device size and orientation. If some tabs can’t be displayed due to limited horizontal space, the final visible tab becomes a More tab, which reveals the additional tabs in a list on a separate screen.</p>
+
+<p><strong>In general, use a tab bar to organize information at the app level.</strong> A tab bar is a good way to flatten your information hierarchy and provide access to several peer information categories or modes at once.</p>
+
+</div>
+    <div class="col-50">
+
+<p><img src="./Tab Bars - UI Bars - iOS Human Interface Guidelines_files/tab_bar_2x.png" alt="" title="" class="device-frame device-frame-bottom" data-hires-status="pending" style="background-image: url(&quot;https://developer.apple.com/ios/human-interface-guidelines/images/iPhone6s_iOSHIG_Frame_2x.png&quot;);"></p>
+
+</div>
+</div>
+
+<p><strong>Don’t remove or disable a tab when its function is unavailable.</strong> If tabs are available in some cases but not in others, your app’s interface becomes unstable and unpredictable. Ensure that all tabs are always enabled, and explain why a tab’s content is unavailable. For example, if there are no songs on an iOS device, the My Music tab in the Music app explains how to download songs.</p>
+
+<p><strong>Use a tab bar strictly for navigation.</strong> Tab bar buttons should not be used to perform actions. If you need to provide controls that act on elements in the current view, use a toolbar instead. See <a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_3&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a>.</p>
+
+<p><strong>Avoid having too many tabs.</strong> Each additional tab reduces the tappable area for selecting a tab and increases the complexity of your app, making it harder to locate information. Although a More tab can display extra tabs, this requires additional taps and is a poor use of space. Include essential tabs only, and use the minimum tabs necessary for your information hierarchy. Too few tabs can be a problem too, as it can make your interface feel disconnected. In general, use between three and five tabs on iPhone. A few more are acceptable on iPad.</p>
+
+<p><strong>Use badging to communicate unobtrusively.</strong> You can display a badge—a red oval containing white text and either a number or an exclamation point—on a tab to indicate that new information is associated with that view or mode.</p>
+
+<p><strong>Always switch contexts in the attached view.</strong> To keep your interface predictable, selecting a tab should always affect the view that’s directly attached to the tab bar, not another view elsewhere on screen. For example, selecting a tab on the left side of a split view shouldn’t cause the right side of the split view to suddenly change. Selecting a tab in a popover shouldn’t cause the view behind the popup to change.</p>
+
+<p>For implementation details, see <a href="https://developer.apple.com/reference/uikit/uitabbar" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uitabbar_1&quot;;return this.s_oc?this.s_oc(e):true">UITabBar</a>.</p>
+
+<div class="note">
+
+<p><strong>Tip</strong> It’s important to understand the difference between a tab bar and a toolbar, because both types of bars appear at the bottom of an app screen. A tab bar lets the user switch quickly between different sections of an app, such as the Alarm, Stopwatch, and Timer tabs in the Clock app. A toolbar contains buttons for performing actions related to the current context, such as creating an item, deleting an item, adding an annotation, or taking a photo. See <a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_4&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a>. Tab bars and toolbars never appear together in the same view.</p>
+
+</div>
+
+					</div>
+
+				</section>
+			</div>
+
+	</main>
+
+
+	<aside class="grid">
+		<section id="router" class="router row">
+						<div class="col-50 text-left ">
+				<a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/" class="block" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/_3&quot;;return this.s_oc?this.s_oc(e):true">
+
+					<span class="router-copy two-lines">
+						<h4>
+							<small>Previous</small>
+							Status Bars
+						</h4>
+					</span>
+
+				</a>
+			</div>
+									<div class="col-50 text-right right divider-left">
+				<a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" class="block" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_5&quot;;return this.s_oc?this.s_oc(e):true">
+
+					<span class="router-copy two-lines">
+						<h4>
+							<small>Next</small>
+							Toolbars
+						</h4>
+					</span>
+
+				</a>
+			</div>
+					</section>
+	</aside>
+
+
+	<!-- Footer -->
+	<section id="globalfooter-wrapper" class="backgroundfooter">
+		<footer id="globalfooter" role="contentinfo">
+			<nav class="footer-breadory">
+				<a href="https://developer.apple.com/" class="home breadcrumbs-home" data-hires-status="pending" onclick="s_objectID=&quot;https://developer.apple.com/_3&quot;;return this.s_oc?this.s_oc(e):true"><span aria-hidden="true"></span><span class="breadcrumbs-home-label">Developer</span></a>
+				<section class="breadcrumbs">
+					<ol class="breadcrumbs-list">
+						<li><a href="https://developer.apple.com/ios/" onclick="s_objectID=&quot;https://developer.apple.com/ios/_1&quot;;return this.s_oc?this.s_oc(e):true">iOS</a></li>
+						<li><a href="https://developer.apple.com/ios/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/_2&quot;;return this.s_oc?this.s_oc(e):true">Human Interface Guidelines</a></li>
+						<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/_2&quot;;return this.s_oc?this.s_oc(e):true">UI Bars</a></li>						<li>Tab Bars</li>					</ol>
+				</section>
+				<div id="directorynav-footer">
+					<div class="directorynav">
+												<div class="column">
+							<h3>Overview</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/_3&quot;;return this.s_oc?this.s_oc(e):true">Design Principles</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/_3&quot;;return this.s_oc?this.s_oc(e):true">What’s New in iOS 10</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/_3&quot;;return this.s_oc?this.s_oc(e):true">Interface Essentials</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Interaction</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/_3&quot;;return this.s_oc?this.s_oc(e):true">3D Touch</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/_3&quot;;return this.s_oc?this.s_oc(e):true">Accessibility</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/_3&quot;;return this.s_oc?this.s_oc(e):true">Audio</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/_3&quot;;return this.s_oc?this.s_oc(e):true">Authentication</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/data-entry/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/data-entry/_3&quot;;return this.s_oc?this.s_oc(e):true">Data Entry</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/feedback/_3&quot;;return this.s_oc?this.s_oc(e):true">Feedback</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/file-handling/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/file-handling/_3&quot;;return this.s_oc?this.s_oc(e):true">File Handling</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/first-launch-experience/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/first-launch-experience/_3&quot;;return this.s_oc?this.s_oc(e):true">First Launch Experience</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/gestures/_3&quot;;return this.s_oc?this.s_oc(e):true">Gestures</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/_3&quot;;return this.s_oc?this.s_oc(e):true">Loading</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/_3&quot;;return this.s_oc?this.s_oc(e):true">Modality</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/_3&quot;;return this.s_oc?this.s_oc(e):true">Navigation</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/_3&quot;;return this.s_oc?this.s_oc(e):true">Requesting Permission</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/_3&quot;;return this.s_oc?this.s_oc(e):true">Settings</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/_3&quot;;return this.s_oc?this.s_oc(e):true">Terminology</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/_3&quot;;return this.s_oc?this.s_oc(e):true">Undo and Redo</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Features</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/_3&quot;;return this.s_oc?this.s_oc(e):true">Multitasking</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/notifications/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/notifications/_3&quot;;return this.s_oc?this.s_oc(e):true">Notifications</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/printing/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/printing/_3&quot;;return this.s_oc?this.s_oc(e):true">Printing</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/_3&quot;;return this.s_oc?this.s_oc(e):true">Quick Look</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/siri/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/siri/_3&quot;;return this.s_oc?this.s_oc(e):true">Siri</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/_3&quot;;return this.s_oc?this.s_oc(e):true">TV Providers</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Visual Design</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/_3&quot;;return this.s_oc?this.s_oc(e):true">Animation</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/_3&quot;;return this.s_oc?this.s_oc(e):true">Branding</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/_3&quot;;return this.s_oc?this.s_oc(e):true">Color</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/_3&quot;;return this.s_oc?this.s_oc(e):true">Layout</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/_3&quot;;return this.s_oc?this.s_oc(e):true">Typography</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Graphics</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/_3&quot;;return this.s_oc?this.s_oc(e):true">App Icon</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/custom-icons/_3&quot;;return this.s_oc?this.s_oc(e):true">Custom Icons</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/_3&quot;;return this.s_oc?this.s_oc(e):true">Image Size and Resolution</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/launch-screen/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/launch-screen/_3&quot;;return this.s_oc?this.s_oc(e):true">Launch Screen</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/_3&quot;;return this.s_oc?this.s_oc(e):true">System Icons</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>UI Bars</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/_3&quot;;return this.s_oc?this.s_oc(e):true">Navigation Bars</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/search-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/search-bars/_3&quot;;return this.s_oc?this.s_oc(e):true">Search Bars</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/status-bars/_4&quot;;return this.s_oc?this.s_oc(e):true">Status Bars</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/tab-bars/_3&quot;;return this.s_oc?this.s_oc(e):true">Tab Bars</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_6&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>UI Views</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/_3&quot;;return this.s_oc?this.s_oc(e):true">Action Sheets</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/activity-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/activity-views/_3&quot;;return this.s_oc?this.s_oc(e):true">Activity Views</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/alerts/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/alerts/_3&quot;;return this.s_oc?this.s_oc(e):true">Alerts</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/collections/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/collections/_3&quot;;return this.s_oc?this.s_oc(e):true">Collections</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/image-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/image-views/_3&quot;;return this.s_oc?this.s_oc(e):true">Image Views</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/maps/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/maps/_3&quot;;return this.s_oc?this.s_oc(e):true">Maps</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/pages/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/pages/_3&quot;;return this.s_oc?this.s_oc(e):true">Pages</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/popovers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/popovers/_3&quot;;return this.s_oc?this.s_oc(e):true">Popovers</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/scroll-views/_3&quot;;return this.s_oc?this.s_oc(e):true">Scroll Views</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/split-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/split-views/_3&quot;;return this.s_oc?this.s_oc(e):true">Split Views</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/tables/_3&quot;;return this.s_oc?this.s_oc(e):true">Tables</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/text-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/text-views/_3&quot;;return this.s_oc?this.s_oc(e):true">Text Views</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/web-views/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-views/web-views/_3&quot;;return this.s_oc?this.s_oc(e):true">Web Views</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>UI Controls</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/_3&quot;;return this.s_oc?this.s_oc(e):true">Buttons</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/edit-menus/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/edit-menus/_3&quot;;return this.s_oc?this.s_oc(e):true">Edit Menus</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/labels/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/labels/_3&quot;;return this.s_oc?this.s_oc(e):true">Labels</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/page-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/page-controls/_3&quot;;return this.s_oc?this.s_oc(e):true">Page Controls</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/pickers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/pickers/_3&quot;;return this.s_oc?this.s_oc(e):true">Pickers</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/progress-indicators/_3&quot;;return this.s_oc?this.s_oc(e):true">Progress Indicators</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/refresh-content-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/refresh-content-controls/_3&quot;;return this.s_oc?this.s_oc(e):true">Refresh Content Controls</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/_3&quot;;return this.s_oc?this.s_oc(e):true">Segmented Controls</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/sliders/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/sliders/_3&quot;;return this.s_oc?this.s_oc(e):true">Sliders</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/steppers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/steppers/_3&quot;;return this.s_oc?this.s_oc(e):true">Steppers</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/switches/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/switches/_3&quot;;return this.s_oc?this.s_oc(e):true">Switches</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/text-fields/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-controls/text-fields/_3&quot;;return this.s_oc?this.s_oc(e):true">Text Fields</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Extensions</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/_3&quot;;return this.s_oc?this.s_oc(e):true">Custom Keyboards</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/_3&quot;;return this.s_oc?this.s_oc(e):true">Document Providers</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/_3&quot;;return this.s_oc?this.s_oc(e):true">Home Screen Actions</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/messaging/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/messaging/_3&quot;;return this.s_oc?this.s_oc(e):true">Messaging</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/photo-editing/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/photo-editing/_3&quot;;return this.s_oc?this.s_oc(e):true">Photo Editing</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/_3&quot;;return this.s_oc?this.s_oc(e):true">Sharing and Actions</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/_3&quot;;return this.s_oc?this.s_oc(e):true">Widgets</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Technologies</h3>
+							<ul>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/apple-pay/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/apple-pay/_3&quot;;return this.s_oc?this.s_oc(e):true">Apple Pay</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/gamekit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/gamekit/_3&quot;;return this.s_oc?this.s_oc(e):true">GameKit</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/healthkit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/healthkit/_3&quot;;return this.s_oc?this.s_oc(e):true">HealthKit</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/homekit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/homekit/_3&quot;;return this.s_oc?this.s_oc(e):true">HomeKit</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/icloud/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/icloud/_3&quot;;return this.s_oc?this.s_oc(e):true">iCloud</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/_3&quot;;return this.s_oc?this.s_oc(e):true">In-App Purchase</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/live-photos/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/live-photos/_3&quot;;return this.s_oc?this.s_oc(e):true">Live Photos</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/researchkit/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/researchkit/_3&quot;;return this.s_oc?this.s_oc(e):true">ResearchKit</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/social-media/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/social-media/_3&quot;;return this.s_oc?this.s_oc(e):true">Social Media</a></li>
+																<li><a href="https://developer.apple.com/ios/human-interface-guidelines/technologies/wallet/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/technologies/wallet/_3&quot;;return this.s_oc?this.s_oc(e):true">Wallet</a></li>
+															</ul>
+						</div>
+												<div class="column">
+							<h3><a href="https://developer.apple.com/ios/human-interface-guidelines/resources/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/resources/_3&quot;;return this.s_oc?this.s_oc(e):true">Resources</a></h3>
+							<ul>
+															</ul>
+						</div>
+												<div class="column">
+							<h3>Related Guidelines</h3>
+							<ul>
+								<li><a href="https://developer.apple.com/watch/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/watch/human-interface-guidelines/_2&quot;;return this.s_oc?this.s_oc(e):true">watchOS Human Interface Guidelines</a></li>
+								<li><a href="https://developer.apple.com/tvos/human-interface-guidelines/" onclick="s_objectID=&quot;https://developer.apple.com/tvos/human-interface-guidelines/_2&quot;;return this.s_oc?this.s_oc(e):true">tvOS Human Interface Guidelines</a></li>
+								<li><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/" onclick="s_objectID=&quot;https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelin_2&quot;;return this.s_oc?this.s_oc(e):true">macOS Human Interface Guidelines</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="ac-gf-footer-legal">
+  <div class="ac-gf-footer-news"> To receive the latest developer news, visit and subscribe to our <a href="https://developer.apple.com/news/" onclick="s_objectID=&quot;https://developer.apple.com/news/_1&quot;;return this.s_oc?this.s_oc(e):true">News and Updates</a>. </div>
+  <div class="ac-gf-footer-legal-copyright">Copyright ©  2017 Apple Inc. All rights reserved.</div>
+  <div class="ac-gf-footer-legal-links">
+    <a href="https://www.apple.com/legal/internet-services/terms/site.html" class="first" onclick="s_objectID=&quot;https://www.apple.com/legal/internet-services/terms/site.html_1&quot;;return this.s_oc?this.s_oc(e):true">Terms of Use</a>
+    <a href="https://www.apple.com/privacy/privacy-policy/" onclick="s_objectID=&quot;https://www.apple.com/privacy/privacy-policy/_1&quot;;return this.s_oc?this.s_oc(e):true">Privacy Policy</a>
+    <a href="https://developer.apple.com/bug-reporting/" onclick="s_objectID=&quot;https://developer.apple.com/bug-reporting/_1&quot;;return this.s_oc?this.s_oc(e):true">Report Bugs</a>
+    <a href="https://developer.apple.com/contact/submit/?subject=website-feedback" onclick="s_objectID=&quot;https://developer.apple.com/contact/submit/?subject=website-feedback_1&quot;;return this.s_oc?this.s_oc(e):true">Feedback</a>
+  </div>
+  <div class="ac-gf-footer-language-links">
+    <a href="https://developer.apple.com/cn/" class="first" onclick="s_objectID=&quot;https://developer.apple.com/cn/_1&quot;;return this.s_oc?this.s_oc(e):true">简体中文</a>
+    <a href="https://developer.apple.com/jp/" onclick="s_objectID=&quot;https://developer.apple.com/jp/_1&quot;;return this.s_oc?this.s_oc(e):true">日本語</a>
+    <a href="https://developer.apple.com/kr/" onclick="s_objectID=&quot;https://developer.apple.com/kr/_1&quot;;return this.s_oc?this.s_oc(e):true">한국어</a>
+  </div>
+</div>
+
+		</footer><!-- globalfooter -->
+	</section>
+
+</body></html>
