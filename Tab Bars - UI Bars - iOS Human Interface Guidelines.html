@@ -515,7 +515,12 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p>A tab bar appears at the bottom of an app screen and provides the ability to quickly switch between different sections of an app. Tab bars are translucent, may have a background tint, maintain the same height in all screen orientations, and are hidden when a keyboard is displayed. A tab bar may contain any number of tabs, but the number of visible tabs varies based on the device size and orientation. If some tabs can’t be displayed due to limited horizontal space, the final visible tab becomes a More tab, which reveals the additional tabs in a list on a separate screen.</p>
 
+<p>탭 바는 앱 화면의 가장 아래에 표시되며, 앱의 다른 섹션으로 재빨리 이동할 수 있게 해줍니다. 탭바는 반투명으로서, 백그라운드 틴트를 줄 수도 있고, 모든 방향의 화면에서 동일한 높이를 유지하며, 키보드가 나올 때는 숨겨집니다. 탭 바는 여러개의 탭을 가질 수 있으나, 기기의 크기와 방향에 따라 그 탭들의 수는 달라집니다. 만약 공간의 한계로 탭을 표시할 수 없을 때는, 표시가능한 마지막 탭을 More탭으로 처리하세요. 이것은 별도의 화면에서 나머지 탭들을 리스트로 보여 줍니다.
+</p>
+
 <p><strong>In general, use a tab bar to organize information at the app level.</strong> A tab bar is a good way to flatten your information hierarchy and provide access to several peer information categories or modes at once.</p>
+
+<p><strong>일반적으로, 탭 바는 앱 레벨의 정보들을 정리하는 데에 사용합니다.</strong> 탭 바는 당신 앱의 정보 계층을 좀더 플랫(flat)하게 하고, 같은 레벨의 정보 카테고리나 모드에 한번에 접속할 수 있게 합니다.</p>
 
 </div>
     <div class="col-50">
@@ -527,19 +532,43 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p><strong>Don’t remove or disable a tab when its function is unavailable.</strong> If tabs are available in some cases but not in others, your app’s interface becomes unstable and unpredictable. Ensure that all tabs are always enabled, and explain why a tab’s content is unavailable. For example, if there are no songs on an iOS device, the My Music tab in the Music app explains how to download songs.</p>
 
+<p><strong>어떤 탭의 기능이 사용불가하더라도 탭을 옮기거나 비활성화하지 마세요.</strong> 탭이 경우에 따라 활성화되었다가 비활성화되었다가 하면, 당신의 앱 인터페이스는 불안정하고 예측하기 힘들어집니다. 모든 탭이 항상 활성화되어있음을 확인하시고, 또 왜 어떤 탭의 컨텐츠가 비활성화되어있는지 설명하세요. 예를 들어, iOS 기기에 음악이 없다면, '마이뮤직' 탭은 음악 대신 음악을 다운로드 받는 방법을 안내해줍니다.</p>
+<br>
+
 <p><strong>Use a tab bar strictly for navigation.</strong> Tab bar buttons should not be used to perform actions. If you need to provide controls that act on elements in the current view, use a toolbar instead. See <a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_3&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a>.</p>
+
+<p><strong>탭 바는 엄격하게 네비게이션 용도로만 써야합니다. </strong>탭 바의 버튼들을 어떤 액션을 수행하는데 쓰면 안됩니다. 현재 화면에서 어떤 요소에 대해 컨트롤을 제공해야 한다면, 탭 바 말고 툴바를 보세요. 자세한 정보는 Toolbar 항목에 있습니다.</p>
+<br>
 
 <p><strong>Avoid having too many tabs.</strong> Each additional tab reduces the tappable area for selecting a tab and increases the complexity of your app, making it harder to locate information. Although a More tab can display extra tabs, this requires additional taps and is a poor use of space. Include essential tabs only, and use the minimum tabs necessary for your information hierarchy. Too few tabs can be a problem too, as it can make your interface feel disconnected. In general, use between three and five tabs on iPhone. A few more are acceptable on iPad.</p>
 
+<p>너무 많은 탭은 지양해야 합니다. 탭이 추가되면 탭 가능한 영역은 그에 따라 좁아지게 되며, 따라서 어떤 정보를 찾는 것이 더 어려워집니다. More탭으로 나머지 탭들을 보여주는 방법이 있지만, 탭을 한번 더 수행해야 하고 공간도 좁습니다. 꼬옥 필요한 탭만 사용하고, 당신 앱의 정보구조를 반영하는 최소한의 탭만 사용하세요. 한편, 탭이 너무 적어도 문제입니다. 인터페이스가 뭔가 연결이 안 된 느낌이 들거든요(??). 일반적으로, 아이폰에선 3-5개의 탭을 사용합니다. 아이패드의 경우 탭 수가 조금 더 늘어날 수 있습니다.</p>
+<br>
+
 <p><strong>Use badging to communicate unobtrusively.</strong> You can display a badge—a red oval containing white text and either a number or an exclamation point—on a tab to indicate that new information is associated with that view or mode.</p>
 
+<p></strong>뱃지를 사용해 드러나지 않게 커뮤니케이션하세요.</strong> 당신은 뱃지(흰색으로 숫자나 느낌표가 그려진 빨간 동그라미)를 탭 위에 두어, 해당 탭이나 모드에 새로운 정보가 관련되어 있음을 알게 해 줍니다.(??)</p>
+<br>
+
 <p><strong>Always switch contexts in the attached view.</strong> To keep your interface predictable, selecting a tab should always affect the view that’s directly attached to the tab bar, not another view elsewhere on screen. For example, selecting a tab on the left side of a split view shouldn’t cause the right side of the split view to suddenly change. Selecting a tab in a popover shouldn’t cause the view behind the popup to change.</p>
+<p><strong>항상 연관된 뷰에서 맥락을 바꾸십시오(??). </strong>당신 앱의인터페이스를 예측가능하게 유지하려면, 탭을 선택하는 것은 늘 화면의 다른 그 어디도 아닌, 탭바에 바로 붙어있는 뷰에 영향을 미쳐야 합니다. 예를 들어 분할보기의 왼쪽에서 탭을 선택해도 분할보기의 오른쪽이 갑자기 변경되지 않아야 합니다. 팝오버에서 탭을 선택하는 것은 그 뒤의 팝업이 바뀌지 않게 해야합니다.(??)
+</p>
+<br>
 
 <p>For implementation details, see <a href="https://developer.apple.com/reference/uikit/uitabbar" onclick="s_objectID=&quot;https://developer.apple.com/reference/uikit/uitabbar_1&quot;;return this.s_oc?this.s_oc(e):true">UITabBar</a>.</p>
+
+<p>실행을 위한 디테일은 UITabBar 를 참조하세요.</p>
+
 
 <div class="note">
 
 <p><strong>Tip</strong> It’s important to understand the difference between a tab bar and a toolbar, because both types of bars appear at the bottom of an app screen. A tab bar lets the user switch quickly between different sections of an app, such as the Alarm, Stopwatch, and Timer tabs in the Clock app. A toolbar contains buttons for performing actions related to the current context, such as creating an item, deleting an item, adding an annotation, or taking a photo. See <a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/" onclick="s_objectID=&quot;https://developer.apple.com/ios/human-interface-guidelines/ui-bars/toolbars/_4&quot;;return this.s_oc?this.s_oc(e):true">Toolbars</a>. Tab bars and toolbars never appear together in the same view.</p>
+
+<p>
+탭 바와 툴바의 차이를 이해하는 것이 중요합니다. 왜나면 두개의 바 모두 앱 화면의 가장 아래에 나타나기 때문입니다.<br>
+탭 바는 사용자가 *앱의 다른 섹션으로 빨리 전환*할 수 있게 해줍니다. 시계 앱에 있는 알람/스톱워치/타이머 탭이 그 예입니다.<br>
+툴바는 *현 화면에 관련된 액션*을 수행하기 위한 버튼을 가지고 있습니다. 아이템 만들기, 아이템 삭제하기, 어노테이션 더하기, 사진 찍기 등이 그 예입니다. Toolbar문서도 읽어보세요. 탭 바와 툴바는 절대 한 화면에 같이 나타나지 않습니다.
+</p>
 
 </div>
 
