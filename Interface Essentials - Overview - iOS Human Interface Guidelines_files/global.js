@@ -1,47 +1,80 @@
-document.addEventListener('DOMContentLoaded', init, false);
+(function(
+	window,
+	$,
+	undefined)
+{
 
-var directoryNav, subNav, sectionHead;
+	var ui = {};
 
-function init() {
-	directoryNav = document.getElementById('directorynav');
-	subNav = document.getElementsByClassName('sub-title');
+	$(function() {
 
-	if(directoryNav != null) {
-		sectionHead = directoryNav.getElementsByTagName('h3');
+		// Cache UI elements
 
-		for(var i=0;i<sectionHead.length;i++){
-			sectionHead[i].addEventListener('click',toggleFooterNav,false);
+		ui.body = $('body');
+
+		ui.nav = {};
+
+		ui.nav.footerNavItems = ui.body.find('#directorynav h3');
+
+		ui.nav.localNavItems = ui.body.find('.sub-title');
+
+		// Attach event listeners
+
+		$(window)
+			.on('scroll', onDidScroll);
+
+		ui.nav.localNavItems
+			.on('click', onDidClickLocalNavItem);
+
+		ui.nav.footerNavItems
+			.on('click', onDidClickFooterNavItem);
+
+	});
+
+	function closeSubnavMenu() {
+
+		ui.nav.localNavItems.map(function(index, item) {
+
+			$(item)
+				.parent()
+				.removeClass('enhance')
+				.find('ul')
+				.removeClass('nav-reveal');
+
+		});
+
+	}
+
+	function onDidScroll(e) {
+
+		if(window.scrollY > 0) {
+
+			closeSubnavMenu();
+
 		}
 
 	}
 
-	if(subNav != null) {
-		for(var i=0;i<subNav.length;i++){
-			subNav[i].addEventListener('click',toggleSubNav,false);
-		}
+	function onDidClickFooterNavItem(e)
+	{
+
+		$(e.currentTarget)
+			.toggleClass('enhance');
+
 	}
 
-}
+	function onDidClickLocalNavItem(e)
+	{
 
-function toggleFooterNav(e) {
-	e.currentTarget.classList.toggle('enhance');
-}
+		$(e.currentTarget)
+			.parent()
+			.toggleClass('enhance')
+			.find('ul')
+			.toggleClass('nav-reveal');
 
-function toggleSubNav(e) {
-	var targetParent = e.currentTarget.parentNode;
-	targetParent.classList.toggle('enhance');
-	targetParent.getElementsByTagName('ul')[0].classList.toggle('nav-reveal');
-}
-
-document.onscroll = function closeNav() {
-	if (window.scrollY) {
-	subNav = document.getElementsByClassName('sub-title');
-
-	for(var i=0;i<subNav.length;i++){
-		if(	subNav[i].parentNode.classList.contains('enhance')) {
-			subNav[i].parentNode.classList.toggle('enhance');
-			subNav[i].parentNode.getElementsByTagName('ul')[0].classList.toggle('nav-reveal');
-		}
 	}
-}
-}
+
+}(
+	window,
+	window.jQuery
+));
